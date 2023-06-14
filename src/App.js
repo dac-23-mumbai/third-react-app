@@ -18,6 +18,7 @@ function CounterApp() {
     console.log(counter);
 
     // Asking react to perform dom opr
+    // how to trigger the DOM Opr
     setCounter(counter);
   };
 
