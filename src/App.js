@@ -9,14 +9,18 @@ function App() {
 
 // UserDefineTag
 function CounterApp() {
+  // Data Member
+  let counter = 1;
+
   // Member Function
   let likeMeAction = () => {
-    // alert();
-    console.log("I m button click");
+    counter = counter + 1;
+    console.log("I m button click", counter);
   };
 
   return (
     <>
+      <h1>{counter}</h1>
       <input type="button" value="Like Me" onClick={likeMeAction} />
     </>
   );
